@@ -9,8 +9,13 @@ export default function RootLayout() {
   });
   
   return (
-    <Stack>
-      <Stack.Screen name="index" />
+    //for all screens
+    // <Stack screenOptions={{headerShown:false}}>
+    //   <Stack.Screen name="index" />
+    // </Stack>
+    //for this particular screen we can write inside tag
+    <Stack >
+      <Stack.Screen name="index" options={{headerShown:false}}/>
     </Stack>
   );
 }
